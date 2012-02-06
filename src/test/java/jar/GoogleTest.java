@@ -7,7 +7,7 @@ public class GoogleTest extends TestCase {
     private Selenium browser;
     public void setUp() {
         browser = new DefaultSelenium("localhost",
-            4444, "foo:*firefox", "http://www.google.com");
+            4444, "*firefox", "http://www.google.com");
         browser.start();
     }
 
