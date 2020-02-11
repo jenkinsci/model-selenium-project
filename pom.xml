@@ -28,7 +28,7 @@
   <repositories>
     <repository>
       <id>openqa</id>
-      <url>http://nexus.openqa.org/content/repositories/releases/</url>
+      <url>https://nexus.openqa.org/content/repositories/releases/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
