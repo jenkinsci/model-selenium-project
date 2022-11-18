@@ -14,6 +14,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.nio.file.Files;
 
 /**
  * Very simple test that uses Selenium Grid.
@@ -51,7 +52,7 @@ public class Selenium2Test extends TestCase {
 
         private File save(byte[] data) {
             try {
-                File tmpFile = File.createTempFile("screenshot", ".png");
+                File tmpFile = Files.createTempFile("screenshot", ".png").toFile();
                 FileUtils.writeByteArrayToFile(tmpFile, data);
                 return tmpFile;
             } catch (IOException e) {
